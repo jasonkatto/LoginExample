@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Enter your information"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/information"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:background="@drawable/border"
+        android:hint="Enter your Name" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:layout_margin="16dp"
+        android:paddingLeft="16dp"
+        android:background="@drawable/border"
+        android:hint="Enter your Email Address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:layout_below="@id/emailAddress"
+        android:layout_margin="16dp"
+        android:background="@drawable/border"
+        android:hint="Enter your Phone Number"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneNumber"
+        android:layout_margin="16dp"
+        android:paddingLeft="16dp"
+        android:background="@drawable/border"
+        android:hint="Enter your password"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:text="submit"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+</RelativeLayout>
